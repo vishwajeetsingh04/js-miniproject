@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    button {
+      padding: 15px 30px 15px 30px;
+      font-weight: bold;
+      font-size: 12px;
+    }
+
+    .container {
+      background-color: skyblue;
+      padding: 10px 50px 10px 40px;
+      width: 300px;
+          border-style: solid;
+          border-radius: 50px;
+          border-color: aqua;
+
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      background-color:lightblue;
+
+    }
+
+    label {
+      font-weight: bold;
+
+    }
+
+    button {
+      background-color: rgb(17, 147, 248);
+      color: black;
+ border-radius: 50px;
+ font-size:15px;
+ border-color: aqua;
+ border-style: solid;
+
+    }
+   button:hover {
+    cursor: pointer;
+ background-color: rgb(17, 147, 248);
+      color: black;
+ border-radius: 50px;
+ font-size:15px;
+ border-color: a3qua;
+ border-style: solid;
+padding:25px 30px 25px 30px;
+    }
+    button:active{
+       background-color:aqua;
+      color: black;
+      box-shadow: 2px 2px 15px  ;
+    }
+    #result{
+    font-style:italic;
+    font-weight: bold;
+    padding-top: 10px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <h1>BMI CALCUTATER</h1>
+      <p> <label>Enter a height</label> <input type="text" id="height" placeholder="Enter height" /></p> <br>
+      <br>
+
+      <p> <label>Enter a weight</label> <input type="text" id="weight" placeholder="Enter weight" /></p>
+      <br>
+      <br>
+      <button>
+        calculate
+      </button>
+      <div id="result"></div>
+      <div id="weight-guide">
+        <h2>
+          BMI Categories:
+        </h2>
+        <pre>
+Underweight = <18.5 
+Normal weight = 18.5–24.9
+Overweight = 25–29.9
+Obesity = BMI of 30 or greater
+   </pre>
+      </div>
+    </form>
+  </div>
+  <script src="bmi.js"></script>
+</body>
+
+</html>
